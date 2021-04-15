@@ -1,0 +1,1 @@
+const varNomeApp = "WhatPlant";

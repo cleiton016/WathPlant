@@ -9,9 +9,7 @@ class MyAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        SizedBox(
-          height: MediaQuery.of(context).padding.top *4,
-        ),
+        SizedBox(height: MediaQuery.of(context).padding.top *4),
         Container(
           height: 150,
           child: Column(
@@ -24,10 +22,8 @@ class MyAppBar extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    varNomeApp,
-                    style: GoogleFonts.lobster(
-                      fontSize: 40,
-                      )
+                    varNomeApp,//Nome do app
+                    style: GoogleFonts.lobster(fontSize: 40)
                   )
                 ],
               ),

@@ -1,3 +1,4 @@
+import 'package:app_estagio/cores.dart';
 import 'package:app_estagio/pages/home/widgets/my_app_bar.dart';
 import 'package:app_estagio/pages/home/widgets/my_menu_options.dart';
 
@@ -16,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.lightGreen,
+      backgroundColor: corPrincipal,
       body: Stack(
         children: <Widget>[
           MyAppBar(),

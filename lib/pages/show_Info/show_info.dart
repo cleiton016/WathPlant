@@ -1,5 +1,5 @@
 import 'dart:io';
-
+import 'package:app_estagio/pages/show_Info/widgets/barra_cabecalho.dart';
 import 'package:flutter/material.dart';
 
 class Show_info extends StatelessWidget {
@@ -11,14 +11,12 @@ class Show_info extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       
+      //appBar: AppBar(),
       body: Center(
         child: Stack(
           children: <Widget>[
-            RaisedButton(
-              onPressed: () {Navigator.pop(context);},
-              child: Text('Retornar !'),
-            ),
-            Image.file(File(imgPath))
+            BarraCabecalho("Muricir"),
+
           ],
         ),
       ),

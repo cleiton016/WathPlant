@@ -1,3 +1,3 @@
 import 'package:flutter/material.dart';
 
-Color corPrincipal = Colors.lightGreenAccent[700];
+final Color corPrincipal = Colors.teal[400];

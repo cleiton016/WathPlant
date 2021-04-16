@@ -1,3 +1,4 @@
+import 'package:app_estagio/cores.dart';
 import 'package:app_estagio/pages/home/home_page.dart';
 import 'package:app_estagio/variaveis.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: varNomeApp,
         theme: ThemeData(
-          primaryColor: Colors.green,
+          primaryColor: corPrincipal,
           primarySwatch: Colors.green,
           brightness: Brightness.dark
         ),

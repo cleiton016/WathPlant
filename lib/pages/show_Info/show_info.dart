@@ -15,8 +15,16 @@ class Show_info extends StatelessWidget {
       body: Center(
         child: Stack(
           children: <Widget>[
-            BarraCabecalho("Muricir"),
-
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                BarraCabecalho("Melhor Resultado"),
+                
+                Text("Nome Científico: Byrsonima crassifolia", style: TextStyle(color: Colors.black54, fontSize: 16),),
+                Text("Nome Popular: Muricir", style: TextStyle(color: Colors.black54, fontSize: 16),),
+                Image.file(File(this.imgPath)),
+              ],
+            )
           ],
         ),
       ),

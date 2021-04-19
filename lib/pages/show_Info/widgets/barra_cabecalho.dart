@@ -1,4 +1,3 @@
-import 'package:app_estagio/cores.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -11,12 +10,12 @@ class BarraCabecalho extends StatelessWidget {
     return Column(
       children: [
         Container(
-          color: corPrincipal,
+          color: Colors.teal[400],
           height: 130,
           width: MediaQuery.of(context).size.width,   
           child: Column(
             children: [
-              SizedBox(height: MediaQuery.of(context).padding.top *2.5),
+              SizedBox(height: MediaQuery.of(context).padding.top *2),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [

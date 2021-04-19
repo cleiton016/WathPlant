@@ -1,4 +1,3 @@
-import 'package:app_estagio/variaveis.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -22,7 +21,7 @@ class MyAppBar extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    varNomeApp,//Nome do app
+                    "WhatPlant",
                     style: GoogleFonts.lobster(fontSize: 40)
                   )
                 ],

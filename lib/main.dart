@@ -1,6 +1,4 @@
-import 'package:app_estagio/cores.dart';
 import 'package:app_estagio/pages/home/home_page.dart';
-import 'package:app_estagio/variaveis.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,9 +12,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: varNomeApp,
+        title: "WhatPlant",
         theme: ThemeData(
-          primaryColor: corPrincipal,
+          primaryColor: Colors.teal[400],
           primarySwatch: Colors.green,
           brightness: Brightness.dark
         ),

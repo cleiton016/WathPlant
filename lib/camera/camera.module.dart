@@ -1,3 +1,4 @@
+import 'package:app_estagio/pages/loanding/loanding.dart';
 import 'package:app_estagio/pages/show_Info/show_info.dart';// pa
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -15,7 +16,7 @@ Future capturarImg(tipo, context) async {
         print(pickedFile.path);
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => Show_info(pickedFile.path)),
+          MaterialPageRoute(builder: (context) => Loanding(pickedFile.path)),
         );
       }
   }

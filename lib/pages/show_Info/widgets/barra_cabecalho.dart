@@ -1,5 +1,6 @@
+import 'package:app_estagio/pages/more_results/more_results.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+//import 'package:google_fonts/google_fonts.dart';
 
 class BarraCabecalho extends StatelessWidget {
   final nomePlanta;
@@ -24,7 +25,12 @@ class BarraCabecalho extends StatelessWidget {
               ),
               //SizedBox(height: 5,),
               InkWell(
-                      onTap: () => {Navigator.pop(context)},
+                      onTap: () => {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => MoreResults() ),
+                        )
+                      },
                       child: Icon(Icons.expand_more)
                     ),
             ],

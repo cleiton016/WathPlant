@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 //import 'package:google_fonts/google_fonts.dart';
 
 class BarraCabecalho extends StatelessWidget {
+  final resultados;
   final nomePlanta;
-  const BarraCabecalho(this.nomePlanta, {Key key}) : super(key: key);
-
+  const BarraCabecalho(this.nomePlanta, this.resultados, {Key key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -28,7 +28,7 @@ class BarraCabecalho extends StatelessWidget {
                       onTap: () => {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => MoreResults() ),
+                          MaterialPageRoute(builder: (context) => MoreResults(this.resultados) ),
                         )
                       },
                       child: Icon(Icons.expand_more)
